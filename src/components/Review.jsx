@@ -81,7 +81,7 @@ const Review = () => {
   return (
     <section
       id="reviews"
-      className="section overflow-hidden"
+      className="section section-line overflow-hidden"
     >
       <div className="container">
 
@@ -89,7 +89,7 @@ const Review = () => {
           What our customers say
         </h2>
 
-        <div className="scrub-slide flex items-stretch gap-3 w-fit">
+        <div className="scrub-slide flex items-stretch gap-3 w-fit snap-x snap-mandatory overflow-x-auto pb-2 scrollbar-thin">
           {reviews.map(({ content, name, imgSrc, company }, key) => (
             <ReviewCard
               key={key}

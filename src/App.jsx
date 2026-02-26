@@ -35,21 +35,21 @@ import Footer from "./components/Footer";
 const App = () => {
 
   useGSAP(() => {
-    const elements = gsap.utils.toArray('.reveal-up');
+    const elements = gsap.utils.toArray(".reveal-up");
 
     elements.forEach((element) => {
       gsap.to(element, {
         scrollTrigger: {
           trigger: element,
-          start: '-200 bottom',
-          end: 'bottom 80%',
-          scrub: true
+          start: "-100 bottom",
+          end: "bottom 88%",
+          scrub: 1,
         },
         y: 0,
         opacity: 1,
         duration: 1,
-        ease: 'power2.out'
-      })
+        ease: "power2.out",
+      });
     });
   });
 

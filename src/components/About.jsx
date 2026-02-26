@@ -20,13 +20,13 @@ const About = () => {
   return (
     <section
       id="about"
-      className="section"
+      className="section section-line"
     >
       <div className="container">
 
-        <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up">
+        <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up ring-1 ring-zinc-700/50 transition-shadow duration-300 hover:ring-zinc-600/50 hover:shadow-xl hover:shadow-black/20">
           <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
-            Welcome! I&apos;m Harsh Pathak, a professional software and web developer with a passion for creating visually striking and highly functional websites. By blending creativity with technical expertise, I transform ideas into digital masterpieces that stand out both in design and performance. Whether it’s building responsive websites, crafting seamless user experiences, or developing innovative web solutions, I ensure that every project I work on exceeds expectations.
+            I&apos;m Harsh Pathak — a <strong className="text-zinc-200">DevOps Engineer</strong> with a solid <strong className="text-zinc-200">Full Stack</strong> background. My focus is on cloud infrastructure, CI/CD pipelines, Kubernetes, and automation so teams can ship faster and more reliably. I also build and maintain web applications when the project needs end-to-end ownership. I&apos;m moving deeper into DevOps (infrastructure as code, monitoring, scalability) while keeping my Full Stack skills sharp for full-cycle delivery.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 md:gap-7">

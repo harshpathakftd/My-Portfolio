@@ -13,7 +13,12 @@ html {
 }
 
 body {
-  @apply bg-zinc-900 text-zinc-50
+  @apply bg-zinc-900 text-zinc-50 antialiased;
+}
+
+/* Section divider line */
+.section-line {
+  @apply border-t border-zinc-800/80;
 }
 
 
@@ -70,7 +75,18 @@ body {
 }
 
 .reveal-up {
-  @apply translate-y-20 opacity-0
+  @apply translate-y-20 opacity-0;
+  will-change: transform, opacity;
+}
+
+/* Hero image subtle float */
+@keyframes hero-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.hero-image-float {
+  animation: hero-float 6s ease-in-out infinite;
 }
 
 
@@ -97,7 +113,7 @@ body {
 }
 
 .nav-link {
-  @apply grid items-center h-9 px-4 text-sm font-medium tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors
+  @apply grid items-center h-9 px-4 text-sm font-medium tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors duration-200
 }
 
 .nav-link.active {
@@ -128,11 +144,11 @@ body {
 }
 
 .btn-primary {
-  @apply h-11 bg-sky-400 text-zinc-950 hover:bg-sky-300 active:bg-sky-400
+  @apply h-11 bg-sky-400 text-zinc-950 hover:bg-sky-300 active:bg-sky-400 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98];
 }
 
 .btn-outline {
-  @apply h-11 bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800
+  @apply h-11 bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98];
 }
 
 
@@ -143,9 +159,28 @@ body {
 }
 
 .text-field {
-  @apply block outline-none w-full px-3 py-3 text-sm bg-zinc-800 rounded-xl ring-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-sky-400 focus:ring-2
+  @apply block outline-none w-full px-3 py-3 text-sm bg-zinc-800 rounded-xl ring-1 ring-inset ring-transparent transition-all duration-300 hover:ring-zinc-50/5 focus:ring-sky-400 focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900
 }
 
 .text-field::placeholder {
   @apply text-zinc-400
+}
+
+/* Skill card hover */
+.skill-card {
+  @apply transition-all duration-300 hover:scale-[1.02] hover:ring-sky-400/30 hover:shadow-lg hover:shadow-sky-950/20;
+}
+
+/* Project card hover */
+.project-card {
+  @apply transition-all duration-300 hover:scale-[1.02] hover:ring-sky-400/20 hover:shadow-xl hover:shadow-sky-950/10;
+}
+
+.project-card .card-arrow {
+  @apply transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5;
+}
+
+/* Review card */
+.review-card {
+  @apply transition-all duration-300 hover:ring-1 hover:ring-sky-400/20 hover:shadow-lg hover:shadow-sky-950/10;
 }

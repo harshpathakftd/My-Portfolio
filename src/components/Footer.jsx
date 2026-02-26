@@ -11,26 +11,12 @@ import { ButtonPrimary } from "./Button";
 
 
 const sitemap = [
-  {
-    label: 'Home',
-    href: '#home'
-  },
-  {
-    label: 'About',
-    href: '#about'
-  },
-  {
-    label: 'Work',
-    href: '#work'
-  },
-  {
-    label: 'Reviews',
-    href: '#reviews'
-  },
-  {
-    label: 'Contact me',
-    href: '#contact'
-  }
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Work", href: "#work" },
+  { label: "Reviews", href: "#reviews" },
+  { label: "Contact me", href: "#contact" },
 ];
 
 const socials = [
@@ -59,14 +45,14 @@ const socials = [
 
 const Footer = () => {
   return (
-    <footer className="section">
+    <footer className="section section-line">
       <div className="container">
 
         <div className="lg:grid lg:grid-cols-2">
 
           <div className="mb-10">
-            <h2 className="headline-1 mb-8 lg:max-w-[12ch] reveal-up">
-              Let&apos;s work together today!
+            <h2 className="headline-1 mb-8 lg:max-w-[14ch] reveal-up">
+              Let&apos;s build something reliable
             </h2>
 
             <ButtonPrimary
@@ -87,7 +73,7 @@ const Footer = () => {
                   <li key={key}>
                     <a
                       href={href}
-                      className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200 reveal-up"
+                      className="block text-sm text-zinc-400 py-1 transition-all duration-200 hover:text-zinc-200 reveal-up"
                     >
                       {label}
                     </a>
@@ -105,7 +91,7 @@ const Footer = () => {
                     <a
                       href={href}
                       target="_blank"
-                      className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200 reveal-up"
+                      className="block text-sm text-zinc-400 py-1 transition-all duration-200 hover:text-zinc-200 reveal-up"
                     >
                       {label}
                     </a>

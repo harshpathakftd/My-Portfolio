@@ -40,18 +40,18 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="section"
+      className="section section-line"
     >
       <div className="container lg:grid lg:grid-cols-2 lg:items-stretch">
 
         <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
 
-          <h2 className="headline-2 lg:max-w-[12ch] reveal-up">
-            Contact me for collaboration
+          <h2 className="headline-2 lg:max-w-[14ch] reveal-up">
+            Contact for DevOps or Full Stack
           </h2>
 
-          <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] reveal-up">
-            Reach out today to discuss your project needs and start collaborating on something amazing!
+          <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[32ch] reveal-up">
+            Whether it&apos;s infrastructure, CI/CD, cloud, or full-stack development — let&apos;s discuss your next project.
           </p>
 
           <div className="flex items-center gap-2 mt-auto">
@@ -60,7 +60,7 @@ const Contact = () => {
                 key={key}
                 href={href}
                 target="_blank"
-                className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-[background-color,color] hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80 reveal-up"
+                className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-all duration-300 hover:bg-zinc-50 hover:text-zinc-950 hover:scale-110 active:scale-95 reveal-up"
               >
                 {icon}
               </a>
