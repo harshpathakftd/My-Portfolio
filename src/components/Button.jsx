@@ -19,14 +19,16 @@ const ButtonPrimary = ({
   target = '_self',
   label,
   icon,
-  classes
+  classes,
+  download
 }) => {
   if (href) {
     return (
       <a
         href={href}
         target={target}
-        className={"btn btn-primary " + classes}
+        className={"btn btn-primary " + (classes || "")}
+        {...(download != null ? { download: typeof download === "string" ? download : true } : {})}
       >
         {label}
 
@@ -59,7 +61,8 @@ ButtonPrimary.propTypes = {
   href: PropTypes.string,
   target: PropTypes.string,
   icon: PropTypes.string,
-  classes: PropTypes.string
+  classes: PropTypes.string,
+  download: PropTypes.oneOfType([PropTypes.bool, PropTypes.string])
 }
 
 

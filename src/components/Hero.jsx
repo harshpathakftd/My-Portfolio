@@ -244,14 +244,16 @@ const Hero = () => {
             <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-zinc-800/80 ring-1 ring-zinc-600/40 text-zinc-300 text-sm font-medium">
               Open to Remote Opportunities
             </span>
-            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-zinc-800/80 ring-1 ring-zinc-600/40 text-zinc-400 text-sm font-medium">
-              <span className="text-sky-400 font-semibold">70%</span> DevOps · <span className="text-sky-400 font-semibold">30%</span> Full Stack
-            </span>
           </div>
 
           {/* CTA Buttons */}
           <div ref={buttonsRef} className="flex flex-wrap items-center gap-3">
-            <ButtonPrimary label="Download CV" icon="download" />
+            <ButtonPrimary
+              href="/images/Harsh_Pathak_devops_ATS__New.pdf"
+              label="Download CV"
+              icon="download"
+              download="Harsh_Pathak_Resume.pdf"
+            />
             <ButtonOutline
               href="#about"
               label="Scroll down"

@@ -20,26 +20,9 @@ const sitemap = [
 ];
 
 const socials = [
-  {
-    label: 'GitHub',
-    href: 'https://www.github.com/codewithsadee-org'
-  },
-  {
-    label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/codewithsadee'
-  },
-  {
-    label: 'Twitter X',
-    href: 'https://x.com/codewithsadee_'
-  },
-  {
-    label: 'Instagram',
-    href: 'https://www.instagram.com/codewithsadee'
-  },
-  {
-    label: 'CodePen',
-    href: 'https://codepen.io/codewithsadee'
-  }
+  { label: "GitHub", href: "https://github.com/harshpathakftd" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/harshpathakftp" },
+  { label: "Gmail", href: "mailto:harshpathakftd@gmail.com" },
 ];
 
 
@@ -56,7 +39,7 @@ const Footer = () => {
             </h2>
 
             <ButtonPrimary
-              href="mailto:codewithsadee@gmail.com"
+              href="mailto:harshpathakftd@gmail.com"
               label="Start project"
               icon="chevron_right"
               classes="reveal-up"
@@ -105,20 +88,11 @@ const Footer = () => {
         </div>
 
         <div className="flex items-center justify-between pt-10 mb-8">
-          <a
-            href="/"
-            className="logo reveal-up"
-          >
-            <img
-              src="/images/logo.svg"
-              width={40}
-              height={40}
-              alt="Logo"
-            />
+          <a href="/" className="logo reveal-up inline-block transition-transform duration-300 hover:scale-105">
+            <img src="/images/logo.png" width={50} height={40} alt="Portfolio" />
           </a>
-
           <p className="text-zinc-500 text-sm reveal-up">
-            &copy; 2024 <span className="text-zinc-200">codewithsadee</span>
+            &copy; 2024 <span className="text-zinc-200">harshpathakftd</span>
           </p>
         </div>
 
